@@ -58,3 +58,4 @@ functions in GO can return more then one value thus declarations are flexible fo
 f, g := os.Open(name)
 ```
 so in the above example f & g are both declared and assigned in one line simply.
+sadf

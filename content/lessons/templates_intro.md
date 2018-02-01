@@ -26,10 +26,13 @@ are stored in separate files normally in an html file that contains an mostly HT
 ` import io/html/template `
 
 ##### Define the template file
-` t, _ := template.ParseFiles("templateName.html") ` //name of new template is "t" and we do not have an error variable. 
+` t, _ := template.ParseFiles("templateName.html") ` //name of new template is "t" and we do not have an error variable.
 
 ##### Execute the template.
 ```
-  p := MyTemplateStruct{ Title: "someTile", OtherSomthing: "somethingElse", Num: 13} // a struct that was made to pass more then one variable to the template.
+  p := MyTemplateStruct{
+    Title: "someTile",
+    OtherSomthing: "somethingElse",
+    Num: 13} // struct to enable multiple values pass.
   t.Execute((w,p))
 ```
